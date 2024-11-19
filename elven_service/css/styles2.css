@@ -1,0 +1,187 @@
+:root {
+    --hero-text-family: 'EB Garamond', serif;
+    --title-family: 'Cinzel', serif;
+    --text-family: 'Lora', serif;
+    --title-color: #F7FFAB;
+}
+
+.page2 {
+    margin: 0;
+    padding: 0;
+    background-color: #0A0A1E;
+}
+
+
+
+                                                         /*NATURE PROTECTION*/
+
+.nature-protection2 {
+    min-height: 282px;
+    padding: 107px 78px 41px 78px;
+    position: relative;
+    background: linear-gradient(180deg, rgba(91, 91, 127, 0.8) 0%, #0A0A1E 100%);
+}
+
+
+                                                               /*FOREST2*/
+
+.forest2 {
+    padding: 41px 54px 100px 54px;
+}
+
+.forest2-title {
+    font-family: var(--title-family);
+    font-weight: 700;
+    font-size: 50px;
+    line-height: calc(67/50);
+    color: #F6FCA7;
+    margin-bottom: 46px;
+    text-align: center;
+}
+
+.forest2-list {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    gap: 18px;
+    margin-bottom: 20px;
+}
+
+.forest2-text {
+    font-family: var(--text-family);
+    font-weight: 400;
+    font-size: 36px;
+    line-height: calc(46/36);
+    color: #F6FCA7;
+    max-width: 810px;
+}
+
+.forest2-text2 {
+    font-family: var(--text-family);
+    font-weight: 400;
+     font-size: 36px;
+    line-height: calc(46/36);
+    color: #F6FCA7;
+    margin-bottom: 127px;
+}
+
+.forest2-galary {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 120px;
+}
+
+.donate-button {
+    background-color: #0A0A1E;
+}
+
+@media screen and (max-width: 1441px){}
+.forest2-list{
+    justify-content: space-between;
+}
+
+
+@media screen and (max-width: 1439px) {
+    .nature-protection2 {
+        padding: 50px 78px 41px 78px;
+        min-height: 0;
+    }
+   .forest2{
+        padding: 41px 68px 100px 68px;
+    }
+   .forest2-list {
+        justify-content: center;
+        gap: 50px;
+        margin-bottom: 40px;
+    }
+    .forest2-text{
+        max-width: 100%;
+    }
+    .forest2-galary {
+        gap: 60px;
+    }
+    .forest2-text2{
+        margin-bottom: 80px;
+        text-align: start;
+    }
+}
+
+@media screen and (max-width: 1023px){
+    .nature-protection2 {
+        padding: 55px 78px 41px 78px;
+        min-height: 0;
+    }
+    .forest2{
+        padding: 41px 50px 80px 50px;
+    }
+    .forest2-title {
+        font-size: 42px;
+        line-height: calc(48 / 42);
+    }
+    
+    .forest2-text {
+        font-size: 32px;
+        line-height: calc(36 / 32);
+    }
+    
+    .forest2-img {
+        width: 450px;
+     }
+    .forest2-text2{
+        font-size: 32px;
+        line-height: calc(36 / 32);
+    }
+
+}
+
+@media screen and (max-width: 641px) {
+    .nature-protection2 {
+        padding: 25px 20px;
+        min-height: 0
+    }
+    .forest2 {
+        padding: 20px 20px 80px 20px;
+    }
+    .forest2-list{
+        gap: 30px;
+    }
+    .forest2-title {
+        font-size: 24px;
+        line-height: calc(28 / 24);
+        margin-bottom: 30px;
+    }
+
+    .forest2-text {
+        font-size: 18px;
+        line-height: calc(20 / 18);
+    }
+
+    .forest2-img {
+        width: 75%;
+    }
+
+    .forest2-text2 {
+        font-size: 18px;
+        line-height: calc(20 / 18);
+        margin-bottom: 60px;
+    }
+    .forest2-item{
+        display: flex;
+        justify-content: center;
+    }
+    .forest2-img{
+        width: 75%;
+    }
+
+}
+
+
+
+
+
+
+
+
+

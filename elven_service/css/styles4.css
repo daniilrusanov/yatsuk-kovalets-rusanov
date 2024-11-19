@@ -1,0 +1,131 @@
+:root {
+    --hero-text-family: 'EB Garamond', serif;
+    --title-family: 'Cinzel', serif;
+    --text-family: 'Lora', serif;
+    --title-color: #F7FFAB;
+}
+
+.page4 {
+    margin: 0;
+    padding: 0;
+    background-color: #382E22;
+}
+
+
+.nature-protection4 {
+    min-height: 282px;
+    padding: 107px 78px 41px 78px;
+    position: relative;
+    background: linear-gradient(180deg, rgba(93, 80, 65, 0.7) 0%, #382E22 100%);
+}
+
+.our-projects {
+    padding: 41px 58px 70px 58px
+}
+
+.history3-list {
+    display: flex;
+    justify-content: center;
+    gap: 140px;
+}
+
+
+.third-text {
+    max-width: 100%;
+    margin-bottom: 54px;
+}
+
+.third-title {
+    margin-bottom: 45px;
+}
+
+
+.our-list {
+    display: flex;
+    gap: 15px;
+    flex-wrap: nowrap;
+    align-items: center;
+    margin-bottom: 15px;
+}
+
+.our-text {
+    max-width: 775px;
+}
+
+.our-text2{
+    max-width: 100%;
+}
+
+.our-img {
+    max-width: 100%;
+}
+
+.our-galery{
+    padding: 41px 33px 120px 33px;
+}
+
+@media screen and (max-width: 1439px) {
+    .nature-protection4 {
+        padding: 50px 78px 41px 78px;
+        min-height: 0;
+    }
+
+    .our-projects {
+        padding: 41px 68px 80px 68px;
+    }
+
+    .our-galery {
+        padding: 41px 68px 100px 68px;
+    }
+    .our-list {
+        gap: 35px;
+        align-items: center;
+        flex-direction: column;
+        margin-bottom: 35px;
+    }
+
+}
+
+@media screen and (max-width: 1023px) {
+    .nature-protection4 {
+        padding: 55px 78px 41px 78px;
+        min-height: 0;
+    }
+
+    .our-projects {
+        padding: 41px 50px 40px 50px;
+    }
+
+    .our-galery {
+        padding: 41px 50px 70px 50px;
+    }
+    .our-img {
+        max-width: 65%;
+    }
+
+
+}
+
+
+@media screen and (max-width: 641px) {
+    .nature-protection4 {
+        padding: 25px 20px;
+        min-height: 0
+    }
+
+    .our-projects {
+        padding: 20px;
+    }
+
+    .our-galery {
+        padding: 20px;
+    }
+
+    .third-text {
+        margin-bottom: 30px;
+    }
+    .our-img {
+        max-width: 80%;
+    }
+
+}
