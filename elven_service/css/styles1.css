@@ -536,7 +536,7 @@ padding: 5px 57px 110px 38px;
 }
 
 .modal-close-btn:hover {
-    color: #F4B400;
+    color: red;
 }
 
 /* Заголовок */
@@ -572,7 +572,7 @@ padding: 5px 57px 110px 38px;
 
 /* Кнопка "Donate" */
 .modal-donate-btn {
-    background-color: #F4B400;
+    background-color: #bd8b04;
     color: #fff;
     border: none;
     padding: 10px 20px;
@@ -583,7 +583,7 @@ padding: 5px 57px 110px 38px;
 }
 
 .modal-donate-btn:hover {
-    background-color: #e1a000;
+    background-color: #7d5a03;
 }
 
 /* Контейнер для феєрверків */
@@ -760,3 +760,10 @@ padding: 5px 57px 110px 38px;
     transform: translateY(0);
   }
   
+  .hero-img, .decoration-left, .decoration-right, .footer-logo {
+    filter: drop-shadow(0 0 10px rgba(255, 255, 255, 0.5));
+  }
+
+  .title-image {
+    filter: drop-shadow(0 0 10px rgba(255, 223, 79, 0.3));
+  }
