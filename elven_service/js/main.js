@@ -1,13 +1,13 @@
-document.addEventListener("DOMContentLoaded", () => {
+  document.addEventListener("DOMContentLoaded", () => {
     const menuToggle = document.querySelector(".menu-toggle");
     const menuList = document.querySelector(".menu-list");
 
     menuToggle.addEventListener("click", () => {
         menuList.classList.toggle("active"); 
     });
-});
+  });
 
-document.addEventListener("DOMContentLoaded", () => {
+  document.addEventListener("DOMContentLoaded", () => {
     const menuToggle = document.querySelector(".menu-toggle");
     const coin = document.querySelector(".coin");
 
@@ -23,9 +23,9 @@ document.addEventListener("DOMContentLoaded", () => {
             { once: true } // Виконується лише один раз
         );
     });
-});
+  });
 
-document.addEventListener("DOMContentLoaded", () => {
+  document.addEventListener("DOMContentLoaded", () => {
     const firefliesContainer = document.querySelector(".fireflies");
   
     for (let i = 0; i < 15; i++) {
@@ -132,3 +132,19 @@ document.addEventListener('DOMContentLoaded', () => {
     checkVisibility(); // Check visibility initially
   });
   
+  document.addEventListener('DOMContentLoaded', () => {
+    const icons = document.querySelectorAll('.hero-img, .title-image, .footer-logo');
+  
+    function checkVisibility() {
+      icons.forEach(icon => {
+        const rect = icon.getBoundingClientRect();
+        if (rect.top <= window.innerHeight && rect.bottom >= 0) {
+          icon.classList.add('active');
+        }
+      });
+    }
+  
+    window.addEventListener('scroll', checkVisibility);
+    checkVisibility(); // Перевірка видимості при завантаженні сторінки
+  });
+    

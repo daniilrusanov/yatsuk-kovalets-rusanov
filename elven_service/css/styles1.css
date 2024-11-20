@@ -746,3 +746,17 @@ padding: 5px 57px 110px 38px;
         opacity: 0.7;
     }
 }
+
+
+/* Піктограми з анімацією */
+.hero-img, .title-image, .footer-logo {
+    opacity: 0;
+    transform: translateY(20px);
+    transition: opacity 1s ease-out, transform 1s ease-out;
+  }
+  
+  .hero-img.active, .title-image.active, .footer-logo.active {
+    opacity: 1;
+    transform: translateY(0);
+  }
+  
