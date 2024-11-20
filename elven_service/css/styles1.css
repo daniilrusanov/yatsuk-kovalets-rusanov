@@ -11,6 +11,16 @@
     background-color: #4A412A;
 }
 
+.fade-in {
+    opacity: 0;
+    transition: opacity 1s ease-out;
+  }
+  
+  .fade-in.active {
+    opacity: 1;
+  }
+  
+
 .hero {
     background-image: url(../img/hero-img.png);
     background-size: cover;

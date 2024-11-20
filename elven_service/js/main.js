@@ -114,3 +114,21 @@ document.addEventListener("DOMContentLoaded", () => {
     });
 });
 
+document.addEventListener('DOMContentLoaded', () => {
+    const fadeInElements = document.querySelectorAll('.fade-in');
+  
+    function checkVisibility() {
+      fadeInElements.forEach(element => {
+        const rect = element.getBoundingClientRect();
+        if (rect.top <= window.innerHeight && rect.bottom >= 0) {
+          element.classList.add('active');
+        } else {
+          element.classList.remove('active');
+        }
+      });
+    }
+  
+    window.addEventListener('scroll', checkVisibility);
+    checkVisibility(); // Check visibility initially
+  });
+  
