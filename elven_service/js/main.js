@@ -59,3 +59,58 @@ document.addEventListener("DOMContentLoaded", () => {
     });
   });
   
+  document.addEventListener('DOMContentLoaded', () => {
+    const modal = document.getElementById('modal');
+    const closeModal = document.getElementById('closeModal');
+    const donationForm = document.getElementById('donationForm');
+    const donationAmount = document.getElementById('donationAmount');
+    const fireworksContainer = document.getElementById('fireworks-container');
+
+    // Відкриття модального вікна
+    document.querySelector('.donate-button').addEventListener('click', () => {
+        modal.style.display = 'block';
+    });
+
+    // Закриття модального вікна
+    closeModal.addEventListener('click', () => {
+        modal.style.display = 'none';
+    });
+
+    // Генерація феєрверків
+    const createFirework = (x, y) => {
+        const firework = document.createElement('div');
+        firework.classList.add('firework');
+        firework.style.left = `${x}px`;
+        firework.style.top = `${y}px`;
+        firework.style.backgroundColor = `hsl(${Math.random() * 360}, 100%, 50%)`;
+        fireworksContainer.appendChild(firework);
+
+        // Видалення феєрверка після анімації
+        firework.addEventListener('animationend', () => firework.remove());
+    };
+
+    const showFireworks = () => {
+        for (let i = 0; i < 10; i++) {
+            const x = Math.random() * window.innerWidth;
+            const y = Math.random() * window.innerHeight;
+            createFirework(x, y);
+        }
+    };
+
+    // Обробка форми донату
+    donationForm.addEventListener('submit', (e) => {
+        e.preventDefault();
+
+        const amount = donationAmount.value;
+        if (amount && amount > 0) {
+            // Показати феєрверки
+            showFireworks();
+
+            // Закрити модальне вікно
+            setTimeout(() => {
+                modal.style.display = 'none';
+            }, 1000);
+        }
+    });
+});
+

@@ -129,6 +129,27 @@
     </main>
     <a id="contacts4"></a>
     <footer class="contact">
+      <div class="modal-overlay" id="modal">
+        <div class="modal-content">
+          <button class="modal-close-btn" id="closeModal">&times;</button>
+          <h2 class="modal-title">Your support makes a difference!</h2>
+          <p class="modal-text">
+            Your contribution helps us protect nature and make a difference. Thank you for your support!
+          </p>
+          <form id="donationForm">
+            <input
+              type="number"
+              min="1"
+              placeholder="Enter donation amount"
+              class="donation-input"
+              id="donationAmount"
+              required
+            />
+            <button type="submit" class="modal-donate-btn">Donate</button>
+          </form>
+        </div>
+      </div>
+      <div id="fireworks-container"></div>
       <div class="footer-img">
         <img src="./img/footer-logo.png" alt="footer-logo"" class="footer-logo"
         />
