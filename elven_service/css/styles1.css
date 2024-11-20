@@ -388,13 +388,13 @@ padding: 5px 57px 110px 38px;
     outline: none;
     border: none;
     background-color: #1F1C1A;
-  }
+}
   
-  .donate-button:hover {
+.donate-button:hover {
     cursor: pointer;
-  }
+}
   
-  .donate-button::before {
+.donate-button::before {
     content: '';
     z-index: -1;
     position: absolute;
@@ -406,14 +406,14 @@ padding: 5px 57px 110px 38px;
     border-radius: 50px;
     transform-origin: center;
     transform: scale(1);
-  }
+}
   
-  .donate-button:hover::before {
+.donate-button:hover::before {
     transition: all 0.75s ease-in-out;
     transform-origin: center;
     transform: scale(1.75);
     opacity: 0;
-  }
+}
 
 .media-title{
     font-family: var(--text-family);
@@ -431,6 +431,7 @@ padding: 5px 57px 110px 38px;
     font-size: 36px;
     line-height: calc(46/36);
     color: #F6FCA7;
+    transition: color 0.3s ease;
 }
 
 .footer-media{
@@ -450,12 +451,25 @@ padding: 5px 57px 110px 38px;
     flex-direction: column;
     align-items: center;
     margin: 0 5px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    cursor: pointer;
+}
+
+
+.media-icon:hover {
+    transform: scale(1.1);
+    box-shadow: 0 8px 15px rgba(0, 0, 0, 0.2); 
+}
+
+.media-icon:hover .media-is {
+    color: #F4B400;
 }
 
 .social-image{
     width: 100px;
     height: 100px;
     margin-bottom: 72px;
+    transition: transform 0.3s ease;
 }
 
 .copyrigh-information{
@@ -537,7 +551,7 @@ padding: 5px 57px 110px 38px;
     width: 100%;
     height: 100%;
     overflow: hidden;
-    pointer-events: none; /* Щоб вони не блокували кліки */
+    pointer-events: none; 
 }
 
 /* Світлячки */
@@ -545,7 +559,7 @@ padding: 5px 57px 110px 38px;
     position: absolute;
     width: 8px;
     height: 8px;
-    background-color: rgba(255, 223, 79, 0.8); /* Жовто-золотий колір */
+    background-color: rgba(255, 223, 79, 0.8);
     border-radius: 50%;
     box-shadow: 0 0 8px rgba(255, 223, 79, 0.8);
     animation: fly 5s linear infinite;
