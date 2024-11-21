@@ -88,13 +88,18 @@
         font-size: 30px;
         line-height: calc(34 / 30);
     }
-    
+    .menu-list a { 
+        font-size: 30px;
+    }   
+}
+
+@media screen and (max-width: 1160px) {
+    .menu-list a { 
+        font-size: 24px;
+    }   
 }
 
 @media screen and (max-width: 1023px){
-    .menu-list a { 
-        font-size: 24px;
-    }
     .hero-elements{
         padding: 3px 40px 120px 40px;  
        
@@ -204,7 +209,7 @@
     }
 }
 
-@media screen and (max-width: 1050px){
+@media screen and (max-width: 1060px){
     .menu-list a { 
         font-size: 16px;
     }
@@ -213,8 +218,21 @@
     }
 }
 
+@media screen and (max-width: 900px){
+    .menu-list a { 
+        padding: 0.3rem 2rem; 
+    }
+}
 
-@media screen and (max-width: 650px){
+@media screen and (max-width: 750px){
+    .menu-list a { 
+        font-size: 12px;
+    }
+}
+
+
+
+@media screen and (max-width: 660px){
     .menu {
         background-color: transparent; 
         box-shadow: none;
@@ -246,7 +264,7 @@
         display: flex;
         right: 5px;
         width: 140px;
-        height: 150px; 
+        height: 160px; 
         opacity: 1; 
     }
 

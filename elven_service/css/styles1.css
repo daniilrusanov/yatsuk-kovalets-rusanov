@@ -533,7 +533,7 @@ padding: 5px 57px 110px 38px;
     border-radius: 5px;
     background: none;
     border: none;
-    font-size: 48px;
+    font-size: 24px;
     color: #333;
     cursor: pointer;
     transition: color 0.3s ease;
@@ -574,22 +574,58 @@ padding: 5px 57px 110px 38px;
     box-sizing: border-box;
 }
 
-/* Кнопка "Donate" */
-.modal-donate-btn {
+.modal-donate-btn-span1 {
+    display: flex;
+    justify-content: center;
+  }
+
+  .modal-donate-btn-span {
     background-color: #333;
-    color: #fff;
-    border: none;
+    z-index: 1; 
+    width: 100px;
+    border-radius: 10px;
+  }
+
+
+.modal-donate-btn {
+    color: white;
+    width: 100px;
     padding: 10px 20px;
     font-size: 18px;
     border-radius: 10px;
+    border: 2px solid #FFF;
     cursor: pointer;
-    transition: background-color 0.3s ease;
-}
 
-.modal-donate-btn:hover {
-    color: black;
-    background-color: #FFF;
-}
+    border: 1px solid;
+    overflow: hidden;
+    position: relative;
+    z-index: 20; 
+    span {
+      z-index: 20;
+    }
+    
+    &:after {
+      background: white;
+      content: "";
+      height: 155px;
+      left: -75px;
+      opacity: .2;
+      position: absolute;
+      top: -50px;
+      transform: rotate(35deg);
+      transition: all 550ms cubic-bezier(0.19, 1, 0.22, 1);
+      width: 50px;
+      z-index: -10;
+    }
+  }
+  
+
+  .modal-donate-btn:hover {
+    &:after {
+      left: 120%;
+      transition: all 550ms cubic-bezier(0.19, 1, 0.22, 1);
+    }
+  }
 
 /* Контейнер для феєрверків */
 #fireworks-container {
@@ -709,7 +745,6 @@ padding: 5px 57px 110px 38px;
     border-bottom-style: solid;
     border-top-color: rgba(38, 189, 189, 0.5);
     border-bottom-color: rgba(38, 189, 189, 0.5);
-    transform: scale(0.1, 1);
   }
 
   .menu-list a:hover {
