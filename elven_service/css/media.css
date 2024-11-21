@@ -1,4 +1,7 @@
 @media screen and (min-width: 1620px) and (max-width: 1920px) {
+    .menu-list a {
+        font-size: 34px;
+    }
     .forest-list {
         justify-content: center;
     }
@@ -8,7 +11,10 @@
 }
 
 
-@media screen and (max-width: 1439px){
+@media screen and (max-width: 1480px){
+    .menu-list a {
+        font-size: 26px;
+    }
     .hero-elements{
         padding: 3px 80px 80px 80px;
     }

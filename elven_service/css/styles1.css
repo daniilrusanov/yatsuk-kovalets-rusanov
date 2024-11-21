@@ -611,6 +611,11 @@ padding: 5px 57px 110px 38px;
     line-height: 1.6;
 }
 
+.donation-input::-webkit-inner-spin-button,
+.donation-input::-webkit-outer-spin-button {
+  -webkit-appearance: none; /* Вимкнути стрілки в браузерах на основі WebKit */
+  margin: 0; /* Прибрати зайві відступи */
+}
 
 /* Поле для вводу суми */
 .donation-input {
