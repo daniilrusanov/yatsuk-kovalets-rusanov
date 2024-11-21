@@ -831,7 +831,7 @@ padding: 5px 57px 110px 38px;
   }
   
   .hero-img, .decoration-left, .decoration-right, .footer-logo {
-    filter: drop-shadow(0 0 10px rgba(255, 255, 255, 0.5));
+    filter: drop-shadow(0 0 10px  rgba(38, 189, 189, 0.7));
   }
 
   .title-image {
