@@ -148,3 +148,34 @@ document.addEventListener('DOMContentLoaded', () => {
     checkVisibility(); // Перевірка видимості при завантаженні сторінки
   });
     
+
+  const images = document.querySelectorAll('.mission-img');
+  const prevBtn = document.querySelector('.gallery-btn.prev');
+  const nextBtn = document.querySelector('.gallery-btn.next');
+  
+  let currentIndex = 0;
+  
+  // Функція для показу активного зображення
+  function showImage(index) {
+    images.forEach((img, i) => {
+      img.classList.remove('act');
+      if (i === index) {
+        img.classList.add('act');
+      }
+    });
+  }
+  
+  // Події для кнопок
+  prevBtn.addEventListener('click', () => {
+    currentIndex = (currentIndex - 1 + images.length) % images.length;
+    showImage(currentIndex);
+  });
+  
+  nextBtn.addEventListener('click', () => {
+    currentIndex = (currentIndex + 1) % images.length;
+    showImage(currentIndex);
+  });
+  
+  // Відображення першого зображення на старті
+  showImage(currentIndex);
+  
